@@ -1,0 +1,85 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.latest-news-leader {
+	padding: 2em 0 1.2em 0;
+	margin-bottom: 2.7em;
+	border-bottom: 3px solid var(--hetas-light-grey);
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts {
+	.fpost {
+		display: flex;
+		margin-bottom: 3em;
+		align-items: center;
+		> figure {
+			min-width: 33%;
+		}
+		.fimage {
+			margin-right: 3em;
+			margin-left: 0;
+			border-left: 0.8em solid var(--hetas-red);
+		}
+		.pcat {
+			text-transform: uppercase;
+			margin: 0 0 1.5em;
+			color: var(--hetas-green);
+		}
+		.ptitle {
+			margin: 0 0 0.5em;
+			a {
+				color: var(--hetas-red);
+			}
+			
+		}
+		.ftext .link {
+			display: inline-block;
+			background: var(--hetas-green);
+			color: #fff;
+			padding: .5em 1em;
+			font-family: var(--hetas-header-font-family);
+			margin: 0;
+			font-size: 1.5em;
+			a {
+				color: #fff;
+			}
+		}
+	}
+	.fpost:nth-child(even) {
+		flex-direction: row-reverse;
+		.fimage {
+			margin-right: 0;
+			margin-left: 3em;
+			border-left: none;
+			border-right: 0.8em solid var(--hetas-orange);
+		}
+		.ptitle {
+			margin: 0 0 0.5em;
+			a {
+				color: var(--hetas-orange);
+			}
+			
+		}
+		.ftext{
+			text-align: right;
+		}
+	}
+
+	@media screen and (max-width: 770px){
+		.fpost {
+		  display: block;
+		  margin: 0 -15px;
+		} 
+		.ftext {
+		  padding: 0 45px;
+		  margin: 45px 0;
+		}
+	}
+	
+}

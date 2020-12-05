@@ -1,0 +1,14 @@
+{
+	"name": "hetas-block-dynamic-posts/hetas-block-dynamic-posts",
+	"title": "HETAS Block Dynamic Posts",
+	"category": "common",
+	"icon": "smiley",
+	"description": "A block to handle HETAS latests posts",
+	"textdomain": "hetas-block-dynamic-posts",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
