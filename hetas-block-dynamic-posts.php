@@ -111,7 +111,6 @@ function hetas_block_dynamic_posts_callback($attributes, $content) {
 
 			<div class="ftext">
 				<header>
-					<p class="pcat">hetas consumer</p>
 					<h3 class="ptitle"><a href="'.get_permalink(get_the_ID()).'" title="'.get_the_title().'">'.get_the_title().'</a></h3>
 				</header>
 				<div class="entry-content">
