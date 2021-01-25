@@ -25,6 +25,10 @@
 			margin-right: 3em;
 			margin-left: 0;
 			border-left: 0.8em solid var(--hetas-red);
+			text-align: left;
+			&.right {
+				text-align: right;
+			}
 		}
 		.pcat {
 			text-transform: uppercase;

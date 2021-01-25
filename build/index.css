@@ -11,8 +11,9 @@
   --hetas-black: #000;
   --hetas-grey: #656565;
   --hetas-light-grey: #e1e1e1;
-  --hetas-main-font-family: 'Open Sans', sans-serif;
-  --hetas-header-font-family: 'Aleo', serif; }
+  --hetas-main-font-family: "Open Sans", sans-serif;
+  --hetas-header-font-family: "Aleo", serif;
+}
 
 .latest-news-leader {
   padding: 2em 0 1.2em 0;
@@ -20,55 +21,66 @@
   border-bottom: 3px solid #e1e1e1;
   border-bottom: 3px solid var(--hetas-light-grey);
   font-size: 1.25em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost {
   display: flex;
   margin-bottom: 3em;
-  align-items: center; }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .fimage {
-    margin-right: 3em;
-    margin-left: 0;
-    border-left: 0.8em solid #ba0c2f;
-    border-left: 0.8em solid var(--hetas-red); }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .pcat {
-    text-transform: uppercase;
-    margin: 0 0 1.5em;
-    color: #009a44;
-    color: var(--hetas-green); }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ptitle {
-    margin: 0 0 0.5em; }
-    .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ptitle a {
-      color: #ba0c2f;
-      color: var(--hetas-red); }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ftext .link {
-    display: inline-block;
-    background: #009a44;
-    background: var(--hetas-green);
-    color: #fff;
-    padding: .5em 1em;
-    font-family: 'Aleo', serif;
-    font-family: var(--hetas-header-font-family);
-    margin: 0;
-    font-size: 1.5em; }
-    .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ftext .link a {
-      color: #fff; }
-
+  align-items: center;
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .fimage {
+  margin-right: 3em;
+  margin-left: 0;
+  border-left: 0.8em solid #ba0c2f;
+  border-left: 0.8em solid var(--hetas-red);
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .pcat {
+  text-transform: uppercase;
+  margin: 0 0 1.5em;
+  color: #009a44;
+  color: var(--hetas-green);
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ptitle {
+  margin: 0 0 0.5em;
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ptitle a {
+  color: #ba0c2f;
+  color: var(--hetas-red);
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ftext .link {
+  display: inline-block;
+  background: #009a44;
+  background: var(--hetas-green);
+  color: #fff;
+  padding: 0.5em 1em;
+  font-family: "Aleo", serif;
+  font-family: var(--hetas-header-font-family);
+  margin: 0;
+  font-size: 1.5em;
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost .ftext .link a {
+  color: #fff;
+}
 .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) {
-  flex-direction: row-reverse; }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .fimage {
-    margin-right: 0;
-    margin-left: 3em;
-    border-left: none;
-    border-right: 0.8em solid #ff8200;
-    border-right: 0.8em solid var(--hetas-orange); }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .ptitle {
-    margin: 0 0 0.5em; }
-    .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .ptitle a {
-      color: #ff8200;
-      color: var(--hetas-orange); }
-  .wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .ftext {
-    text-align: right; }
-
+  flex-direction: row-reverse;
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .fimage {
+  margin-right: 0;
+  margin-left: 3em;
+  border-left: none;
+  border-right: 0.8em solid #ff8200;
+  border-right: 0.8em solid var(--hetas-orange);
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .ptitle {
+  margin: 0 0 0.5em;
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .ptitle a {
+  color: #ff8200;
+  color: var(--hetas-orange);
+}
+.wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts .fpost:nth-child(even) .ftext {
+  text-align: right;
+}
 
 /*# sourceMappingURL=index.css.map*/
