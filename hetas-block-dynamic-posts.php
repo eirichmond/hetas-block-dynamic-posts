@@ -98,29 +98,41 @@ function hetas_block_dynamic_posts_callback($attributes, $content) {
 		'post_type' => 'post',
 	);
 	$the_query = new WP_Query($args);
+
 	
 	// The Loop
+	$count = 1;
 	if ( $the_query->have_posts() ) {
+
+	
 		$html = '<div class="latest-news-leader">Letest news from hetas</div>';
 		$html .= '<div class="wp-block-hetas-block-dynamic-posts-hetas-block-dynamic-posts">';
 		while ( $the_query->have_posts() ) { $the_query->the_post();
-			$html .= '<article id="post-'. get_the_ID() .'" class="fpost">
-			<figure>
-				<div class="fimage">'. get_the_post_thumbnail(get_the_ID(), 'frontpage-post-2020').'</div>
-			</figure>
 
-			<div class="ftext">
-				<header>
-					<h3 class="ptitle"><a href="'.get_permalink(get_the_ID()).'" title="'.get_the_title().'">'.get_the_title().'</a></h3>
-				</header>
-				<div class="entry-content">
-					<p class="ptext">'.get_the_excerpt(get_the_ID()).'</p>
+			if($count % 2) {
+				$align = 'left';
+			} else {
+				$align = 'right';
+			}
+	
+			$html .= '<article id="post-'. get_the_ID() .'" class="fpost">
+				<figure>
+					<div class="fimage '.$align.'">'. get_the_post_thumbnail(get_the_ID(), 'frontpage-post-2020').'</div>
+				</figure>
+
+				<div class="ftext">
+					<header>
+						<h3 class="ptitle"><a href="'.get_permalink(get_the_ID()).'" title="'.get_the_title().'">'.get_the_title().'</a></h3>
+					</header>
+					<div class="entry-content">
+						<p class="ptext">'.get_the_excerpt(get_the_ID()).'</p>
+					</div>
+					<footer>
+						<p class="link"><a href="'.get_permalink(get_the_ID()).'" title="'.get_the_title().'">Read more...</a></p>
+					</footer>
 				</div>
-				<footer>
-					<p class="link"><a href="'.get_permalink(get_the_ID()).'" title="'.get_the_title().'">Read more...</a></p>
-				</footer>
-			</div>
-		</article>';
+			</article>';
+			$count++;
 		}
 		$html .=  '</div>';
 		return $html;
